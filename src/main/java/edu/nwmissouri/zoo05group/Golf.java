@@ -5,8 +5,9 @@
 package edu.nwmissouri.zoo05group;
 
 /**
- *
+ * This Golf Class extends AbstractGame class
  * @author S545030
+ * 
  */
 public class Golf extends AbstractGame {
 
