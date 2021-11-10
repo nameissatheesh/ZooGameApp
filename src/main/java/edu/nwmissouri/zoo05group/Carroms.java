@@ -5,7 +5,8 @@
 package edu.nwmissouri.zoo05group;
 
 /**
- *
+ * This is Carroms game class which extends AbstractGame class
+ * It has override methods which has print statements in it
  * @author S545465 Rahul Konda
  */
 public class Carroms extends AbstractGame {
@@ -80,7 +81,10 @@ public class Carroms extends AbstractGame {
     void game() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
+    
+    /**
+     * This is enum class which describes the carroms class
+     */
     public enum carromcoins {
         WHITECOINS,
         BLACKCOINS,
