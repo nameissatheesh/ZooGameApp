@@ -7,8 +7,8 @@ package edu.nwmissouri.zoo05group;
 import java.util.ArrayList;
 
 /**
+ * This is CarromsGroup game class
  * Provides methods to create and run a group of Carroms
- *
  * @author S545465 Rahul Konda
  */
 public class CarromsGroup {
