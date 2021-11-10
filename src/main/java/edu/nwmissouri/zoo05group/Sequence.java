@@ -5,14 +5,14 @@
 package edu.nwmissouri.zoo05group;
 
 /**
- *
+ *This is Sequence class that extends AbstractGame
  * @author Keerthana Ragut
  */
 public class Sequence extends AbstractGame {
 
     /**
      *
-     * @param game_name
+     * @param game_name 
      * @param number_of_players
      */
     public Sequence(String game_name, int number_of_players) {
@@ -78,7 +78,9 @@ public class Sequence extends AbstractGame {
     void game() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
+/**
+ * Enum for Sequence class
+ */
     public enum CoinsColors {
         RED,
         BLUE,
