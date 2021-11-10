@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Test Uno Group.
- * 
+ * This class tests down the methods in UnoGroup java class
  * @author Rahul Konda (#S545465)
  */
 public class UnoGroupTest {
