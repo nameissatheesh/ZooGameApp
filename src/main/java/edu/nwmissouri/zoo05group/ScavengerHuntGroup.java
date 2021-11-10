@@ -5,43 +5,41 @@ import java.util.ArrayList;
 /**
  * Provides methods to create and run a group of ScavengerHunt
  *
- * @author S545040 Sai Krishna Vuppala
+ * @author S545040
  */
 public class ScavengerHuntGroup {
 
     private static ArrayList<ScavengerHunt> myGroup;
 
     /**
-     * Create a static group of Bingo
+     * Create a static group of ScavengerHunt
      *
-     * @return the number of animals in the group
+     * @return 
      */
     public static int create() {
         myGroup = new ArrayList<>();
 
         ScavengerHunt a = new ScavengerHunt("Aquatic", 2);
         myGroup.add(a);
-        myGroup.add(new ScavengerHunt("Bat", 2));
-        myGroup.add(new ScavengerHunt("Ball", 2));
+        myGroup.add(new ScavengerHunt("Soil", 2));
+        myGroup.add(new ScavengerHunt("Himalayas", 2));
 
         return myGroup.size();
     }
 
-    /**
-     * Run (simulate) the group doing things
-     */
+    
     public static void run() {
         System.out.println("BBBBBBBBBBBBBBBBBBBBBBBBBB");
         System.out.println("Hey - look at the ScavengerHunt Game!");
-        myGroup.forEach(scavengerhunt -> {
-        scavengerhunt.game();
-        scavengerhunt.players();
-        scavengerhunt.rules();
-        scavengerhunt.play();
-        scavengerhunt.skill();
-        scavengerhunt.scoring();
+        myGroup.forEach(scavengerHunt -> {
+            scavengerHunt.game("ScavengerHunt");
+            scavengerHunt.players();
+            scavengerHunt.rules();
+            scavengerHunt.play();
+            scavengerHunt.skill();
+            scavengerHunt.scoring();
         });
-        System.out.println("Nice scavengerhunt - that was fun!");
+        System.out.println("Nice ScavengerHunt - that was fun!");
         System.out.println("BBBBBBBBBBBBBBBBBBBBBBBBBB");
     }
 
