@@ -18,7 +18,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Test Carroms Group.
- * 
+ * This class tests down the methods in CarromsGroup java class
  * @author Rahul Konda(#S545465)
  */
 public class CarromsGroupTest {
