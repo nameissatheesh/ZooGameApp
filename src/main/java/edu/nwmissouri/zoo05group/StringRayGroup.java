@@ -3,8 +3,8 @@ package edu.nwmissouri.zoo05group;
 import java.util.ArrayList;
 
 /**
- *
- * @author Saikrishna Vuppala
+ * Provides methods to create and run a group of StringRay
+ * @author S545040 Saikrishna Vuppala
  */
 public class StringRayGroup {
     private static ArrayList<StringRay> myGroup;
