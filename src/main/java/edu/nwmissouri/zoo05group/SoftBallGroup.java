@@ -3,7 +3,7 @@ package edu.nwmissouri.zoo05group;
 import java.util.ArrayList;
 
 /**
- * Provides methods to create and run a group of Badminton
+ * Provides methods to create and run a group of SoftBall
  *
  * @author S545040 Sai Krishna Vuppala
  */
