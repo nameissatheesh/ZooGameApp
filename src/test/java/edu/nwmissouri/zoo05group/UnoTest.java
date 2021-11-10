@@ -16,7 +16,7 @@ import org.junit.jupiter.api.Test;
 
 /**
  * Test Uno using JUnit5
- *
+ * This class tests down the methods in CarromsGroup java class
  * @author Rahul Konda (#S545465)
  */
 public class UnoTest {
