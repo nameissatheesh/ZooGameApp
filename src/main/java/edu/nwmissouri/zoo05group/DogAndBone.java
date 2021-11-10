@@ -5,7 +5,7 @@
 package edu.nwmissouri.zoo05group;
 
 /**
- *
+ *This is DogAndBone class which extends AbstractGame
  * @author S545031
  */
 public class DogAndBone extends AbstractGame {
@@ -77,7 +77,9 @@ public class DogAndBone extends AbstractGame {
     void game() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
+/**
+ * Enum for DogAndBone class
+ */
     public enum Things {
         BONE,
         STONE,
@@ -103,7 +105,7 @@ public class DogAndBone extends AbstractGame {
 
     /**
      * An instance of an DogAndBone is now Runnable - call this run() method to
-     * see all the Badminton tricks.
+     * see all the DogAndBone tricks.
      */
     @Override
     public void run() {
