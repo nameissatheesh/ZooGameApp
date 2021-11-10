@@ -5,7 +5,7 @@
 package edu.nwmissouri.zoo05group;
 
 /**
- *
+ * This is Monopoly class extends AbstractGame class
  * @author S545030
  */
 public class Monopoly extends AbstractGame {
@@ -79,6 +79,8 @@ public class Monopoly extends AbstractGame {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
+  
+    
     public enum Money {
         COINS,
         NOTES;
