@@ -3,7 +3,7 @@ package edu.nwmissouri.zoo05group;
 import java.util.ArrayList;
 
 /**
- * Provides methods to create and run a group of Badminton
+ * Provides methods to create and run a group of Golf game
  *
  * @author S545030
  */
@@ -14,7 +14,7 @@ public class GolfGroup {
     /**
      * Create a static group of Golf
      *
-     * @return the number of animals in the group
+     * @return 
      */
     public static int create() {
         myGroup = new ArrayList<>();
