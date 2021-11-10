@@ -5,7 +5,7 @@
 package edu.nwmissouri.zoo05group;
 
 /**
- *
+ * ScavengerHunt class (derived subclass of the superclass AbstractGame)
  * @author S545040 
  */
 public class ScavengerHunt extends AbstractGame {
@@ -34,6 +34,7 @@ public class ScavengerHunt extends AbstractGame {
     /**
      * call this player() method to see how many number of players are playing.
      */
+    
     public void players() {
         System.out.printf("Playing scavengerHunt with %s players\n", this.number_of_players);
     }

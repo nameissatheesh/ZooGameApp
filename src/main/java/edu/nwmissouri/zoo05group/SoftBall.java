@@ -5,7 +5,7 @@
 package edu.nwmissouri.zoo05group;
 
 /**
- *
+ * SoftBall class (derived subclass of the superclass AbstractGame)
  * @author S545040 Sai krishna Vuppala
  */
 public class SoftBall extends AbstractGame {
@@ -52,6 +52,7 @@ public class SoftBall extends AbstractGame {
      *
      * call this skill() method to see which game you are playing.
      */
+    
     @Override
     public void skill() {
         System.out.println("The skills required for softball are : throwingcatching, hitting for contact, hitting for power, and running");
@@ -62,6 +63,7 @@ public class SoftBall extends AbstractGame {
      *
      * call this rules() method to see which game you are playing.
      */
+    
     @Override
     public void rules() {
         System.out.println("TEach team bats once in each innings. A batter must successfully strike the ball and run around, Once they get all the way around and back to home plate without being given out a run is Scored. The fielding team can prevent the batsmen by making them miss the ball, catching the ball, tagging one of the bases before they reach. A home run can be scored by hitting the ball over the outfield and into a dead ball area ");
@@ -71,6 +73,7 @@ public class SoftBall extends AbstractGame {
      *
      * call this scoring() method to see which game you are playing.
      */
+    
     @Override
     public void scoring() {
         System.out.println("To score a run the batsman must successfully first hit the ball and make it around the bases without being given out. One run is scored for every batsmen they manage to get round. A run can be scored even if the batsmen who hit the ball doesn’t make it round to home plate but manages to get a player that’s already on one of the bases home ");
