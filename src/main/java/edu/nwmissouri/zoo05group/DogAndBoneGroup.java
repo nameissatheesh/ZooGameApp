@@ -7,7 +7,7 @@ package edu.nwmissouri.zoo05group;
 import java.util.ArrayList;
 
 /**
- *
+ *This is DogAndBoneGroup class
  * @author S545031
  */
 public class DogAndBoneGroup {
@@ -16,7 +16,7 @@ public class DogAndBoneGroup {
     /**
      * Create a static group of DogAndBone
      *
-     * @return the number of animals in the group
+     * @return the number of players in the group
      */
     public static int create() {
         myGroup = new ArrayList<>();
