@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  * Test ScavengerHunt Group.
  * 
- * @author s545040
+ * @author s545030
  */
 public class ScavengerHuntGroupTest {
 
@@ -59,3 +59,4 @@ public class ScavengerHuntGroupTest {
     }
 
 }
+
