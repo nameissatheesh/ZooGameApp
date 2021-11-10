@@ -7,7 +7,7 @@ package edu.nwmissouri.zoo05group;
 import java.util.ArrayList;
 
 /**
- *
+ *This is SequenceGroup Class 
  * @author S545031
  */
 public class SequenceGroup {
@@ -16,7 +16,7 @@ public class SequenceGroup {
     /**
      * Create a static group of Sequence
      *
-     * @return the number of animals in the group
+     * @return the number of players in the group
      */
     public static int create() {
         myGroup = new ArrayList<>();
