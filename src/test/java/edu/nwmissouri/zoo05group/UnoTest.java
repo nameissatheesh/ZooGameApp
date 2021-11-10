@@ -1,3 +1,7 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
 package edu.nwmissouri.zoo05group;
 
 import java.io.ByteArrayOutputStream;
@@ -11,16 +15,16 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 /**
- * Test DogAndBone using JUnit5
+ * Test Uno using JUnit5
  *
- * @author s545031
+ * @author Rahul Konda (#S545465)
  */
-public class DogAndBoneTest {
+public class UnoTest {
 
     private final PrintStream standardOut = System.out;
     private final ByteArrayOutputStream outputStreamCaptor = new ByteArrayOutputStream();
 
-    public DogAndBoneTest() {
+    public UnoTest() {
     }
 
     @BeforeAll
@@ -46,9 +50,9 @@ public class DogAndBoneTest {
    */
     @Test
     public void testplayers() throws Exception {
-        String expected = "Playing DogAndBone with 6";
-        var dogAndBone = new DogAndBone("Keerthana", 6);
-        dogAndBone.players();
+        String expected = "Playing Uno Cards with 6";
+        var uno = new Uno("Rahul", 6);
+        uno.players();
         String actual = outputStreamCaptor.toString().trim();
         assertEquals(expected, actual);
     }
@@ -59,40 +63,38 @@ public class DogAndBoneTest {
 
     @Test
     public void testPlay() throws Exception {
-        String expected = "DogAndBone is a game which is played by two different groups with bone in the circle";
-        var dogAndBone = new DogAndBone("Keerthana", 6);
-        dogAndBone.play();
+        String expected = "Uno is a game played by using Uno cards with the help of color and numbers written on cards";
+        var uno = new Uno("Rahul", 2);
+        uno.play();
         String actual = outputStreamCaptor.toString().trim();
         assertEquals(expected, actual);
     }
 
     @Test
     public void testSkill() throws Exception {
-        String expected = "DogAndBone needs full concentration on bone to get the bone from circle";
-        var dogAndBone = new DogAndBone("Keerthana", 6);
-        dogAndBone.skill();
+        String expected = "Skills required while playing Uno are - one needs to keep the previous card in mind and release the card accordingly and make use of the wild card in much needed situation";
+        var uno = new Uno("Rahul", 2);
+        uno.skill();
         String actual = outputStreamCaptor.toString().trim();
         assertEquals(expected, actual);
     }
 
     @Test
     public void testRules() throws Exception {
-        String expected = "Each one person will come from each group and will play for the bone, the person who takes the bone will get a point.";
-        var dogAndBone = new DogAndBone("Keerthana", 6);
-        dogAndBone.rules();
+        String expected = "It is an indoor game, each player will be given 7 cards. One need to start by dropping a card. Second person has to throw a card based on the previous card. He has to throw the same color card or the number on previous card.";
+        var uno = new Uno("Rahul", 2);
+        uno.rules();
         String actual = outputStreamCaptor.toString().trim();
         assertEquals(expected, actual);
     }
 
     @Test
     public void testrScoring() throws Exception {
-        String expected = "For each win the team gets 1 point and finally at the end highest points group wins!!";
-        var dogAndBone = new DogAndBone("Keerthana", 6);
-        dogAndBone.scoring();
+        String expected = "A person who drops all his cards at the earlist is considered to be as winner.";
+        var uno = new Uno("Rahul", 2);
+        uno.scoring();
         String actual = outputStreamCaptor.toString().trim();
         assertEquals(expected, actual);
     }
 
 }
-
-

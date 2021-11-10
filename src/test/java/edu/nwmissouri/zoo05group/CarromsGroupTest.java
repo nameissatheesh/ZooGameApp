@@ -1,4 +1,8 @@
 /*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -13,13 +17,13 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * Test Sequence Group.
+ * Test Carroms Group.
  * 
- * @author s545031
+ * @author Rahul Konda(#S545465)
  */
-public class SequenceGroupTest {
+public class CarromsGroupTest {
 
-    public SequenceGroupTest() {
+    public CarromsGroupTest() {
     }
 
     @BeforeAll
@@ -39,22 +43,22 @@ public class SequenceGroupTest {
     }
 
     /**
-     * Test of create method, of class SequenceGroup.
+     * Test of create method, of class CarromsGroup.
      */
     @Test
     public void testGroupCreate() {
         int expectedSize = 3;
-        int actualSize = SequenceGroup.create();
+        int actualSize = CarromsGroup.create();
         assertEquals(expectedSize, actualSize);
     }
 
     /**
-     * Test of run method, of class SequenceGroup.
+     * Test of run method, of class UnoGroup.
      */
     @Test
     public void testGroupRun() {
-        SequenceGroup.create();
-        SequenceGroup.run();
+        CarromsGroup.create();
+        CarromsGroup.run();
         assertTrue(true);
     }
 

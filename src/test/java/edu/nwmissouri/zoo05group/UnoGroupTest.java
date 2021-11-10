@@ -13,13 +13,13 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * Test DogAndBone Group.
+ * Test Uno Group.
  * 
- * @author s545031
+ * @author Rahul Konda (#S545465)
  */
-public class DogAndBoneGroupTest {
+public class UnoGroupTest {
 
-    public DogAndBoneGroupTest() {
+    public UnoGroupTest() {
     }
 
     @BeforeAll
@@ -39,22 +39,22 @@ public class DogAndBoneGroupTest {
     }
 
     /**
-     * Test of create method, of class DogAndBoneGroup.
+     * Test of create method, of class UnoGroup.
      */
     @Test
     public void testGroupCreate() {
         int expectedSize = 3;
-        int actualSize = DogAndBoneGroup.create();
+        int actualSize = UnoGroup.create();
         assertEquals(expectedSize, actualSize);
     }
 
     /**
-     * Test of run method, of class DogAndBoneGroup.
+     * Test of run method, of class UnoGroup.
      */
     @Test
     public void testGroupRun() {
-        DogAndBoneGroup.create();
-        DogAndBoneGroup.run();
+        UnoGroup.create();
+        UnoGroup.run();
         assertTrue(true);
     }
 
