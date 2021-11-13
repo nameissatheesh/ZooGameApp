@@ -1,1 +1,1 @@
-web: java -jar target/ZooGameApp-1.0-SNAPSHOT.jar
+web: java $JAVA_OPTS -Dserver.port=$PORT -jar target/ZooGameApp-1.0-SNAPSHOT.jar
