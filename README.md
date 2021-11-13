@@ -32,7 +32,7 @@ These have been updated. Find these in pom.xml
 A user interface (besides the console) would be nice. We voted on a web front end.
 ```
   $ mvn clean package spring-boot:repackage
-  $ java -jar target/Zoo04Lab-1.0-SNAPSHOT
+  $ java -jar target/ZooGameApp-1.0-SNAPSHOT.jar
 ```
 
 ## Principles of Object-Oriented Programming (OOP)
