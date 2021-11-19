@@ -10,7 +10,7 @@ package edu.nwmissouri.zoo05group;
 
 /**
  * Provides methods to create and run a group of StringRay.
- * @author Saikrishna Vuppala
+ * @author s545040 Saikrishna Vuppala
  */
 public class StringRay extends Animal {
     /**
@@ -73,6 +73,15 @@ public class StringRay extends Animal {
         for (Times times : Times.values()) {
             System.out.println(times);
         }
+         try{
+            int p =6/0;
+            
+            System.out.println("this is shoebill division !");
+            }
+        
+            catch (Exception e){
+              System.out.println( "Exception thrown is: "+e);
+            }
     }
     
 }
