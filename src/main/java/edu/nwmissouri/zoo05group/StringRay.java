@@ -10,7 +10,7 @@ package edu.nwmissouri.zoo05group;
 
 /**
  * Provides methods to create and run a group of StringRay.
- * @author Saikrishna Vuppala
+ * @author s545040 Saikrishna Vuppala
  */
 public class StringRay extends Animal {
     /**
