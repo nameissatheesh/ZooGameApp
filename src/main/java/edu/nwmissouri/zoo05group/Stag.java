@@ -37,25 +37,62 @@ public class Stag extends Animal{
         System.out.println("I'm brown in colour with white spots on me");
     }
     
-    /**
-     * method for addition
-     */
-       public void access() {
-        double a = 2.5;
-        int b = 2;
-        double c = getStagAddition(a, b);
-        System.out.printf("I know StagAddition! %4.2f plus %d is %4.2f \n", a, b, c);
+    public void caladd() {
+    try{
+        double m = 4.0;
+        int n = 2;
+        double o = getStagAddition(m, n);
+        System.out.printf("I know StagAddition! %4.2f plus %d is %4.2f \n", m, n, o);
+        }
+    catch (ArithmeticException e){
+            System.out.println("Exception thrown :" + e);
+        }
+    finally {
+            System.out.println("error defined in addition");
     }
-
-    /**
-     * 
-     * @param valueOne
-     * @param valueTwo
-     * @return 
-     */
-    public double getStagAddition(double valueOne, int valueTwo) {
-        return valueOne + valueTwo;
     }
+    
+    public double getStagAddition(double m, int n) {
+        return m + n;
+    }
+    
+    public void calsub() {
+    try{
+        double m = 7.0;
+        int n = 3;
+        double o = getStagSubstraction(m, n);
+        System.out.printf("I know StagSubstraction! %4.2f minus %d is %4.2f \n", m, n, o);
+        }
+    catch (ArithmeticException e){
+            System.out.println("Exception thrown :" + e);
+        }
+    finally {
+            System.out.println("error defined in substraction");
+    }
+    }
+    
+    public double getStagSubstraction(double m, int n) {
+        return m - n;
+    }
+    
+    public void caldiv() {
+    try{
+        int m = 8;
+        int n = 0;
+        int o = getStagdivision(m, n);
+        System.out.printf("I know Stagdivision!");
+        }
+    catch (ArithmeticException e){
+            System.out.println("Exception thrown :" + e);
+        }
+    finally {
+            System.out.println("error defined in division");
+    }
+    }
+    
+    public int getStagdivision(int m, int n) {
+        return m/n;
+    }   
     
      /**
      * enum function with month values
@@ -86,5 +123,8 @@ public class Stag extends Animal{
         a.speak();
         a.move();
         a.color();
+        a.caladd();
+        a.calsub();
+        a.caldiv();
     }
 }

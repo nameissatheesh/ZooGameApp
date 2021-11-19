@@ -91,6 +91,19 @@ public class Carroms extends AbstractGame {
         REDCOIN,
         STRIKER;
     }
+    
+    public void exceptiontest(){
+    try {
+        int a[] = new int[4];
+        System.out.println("Access element three :" + a[8]);
+     }
+     catch (ArrayIndexOutOfBoundsException e) {
+        System.out.println("Exception thrown  :" + e);
+     }
+      finally{
+     System.out.println("Out of the block");
+   }
+    }
 
     /**
      * Main method
@@ -105,6 +118,7 @@ public class Carroms extends AbstractGame {
         carroms.play();
         carroms.skill();
         carroms.scoring();
+        carroms.exceptiontest();
     }
 
     /**
