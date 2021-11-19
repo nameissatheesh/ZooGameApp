@@ -6,7 +6,7 @@ package edu.nwmissouri.zoo05group;
 
 /**
  * ScavengerHunt class (derived subclass of the superclass AbstractGame)
- * @author S545040 
+ * @author S545040 SaiKrishna Vuppala
  */
 public class ScavengerHunt extends AbstractGame {
 
