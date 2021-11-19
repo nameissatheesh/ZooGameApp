@@ -10,9 +10,13 @@ Zoo simulation with games.
 
 ## Contributers
   [**Gayatri Devabhaktuni**](https://github.com/gayatridevabhaktuni)
+  
   [**Keerthana Ragut**](https://github.com/Keerthanaragut)
+  
   [**Rahul konda**](https://github.com/rahulkonda96p)
+  
   [**Sai Krishna Vuppala**](https://github.com/Saiv0711)
+  
   [**Shashankaravi Chaparala**](https://github.com/shashankaravichaparala)
  
 
