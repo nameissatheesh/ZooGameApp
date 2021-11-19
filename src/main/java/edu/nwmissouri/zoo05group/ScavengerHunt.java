@@ -6,7 +6,7 @@ package edu.nwmissouri.zoo05group;
 
 /**
  * ScavengerHunt class (derived subclass of the superclass AbstractGame)
- * @author S545040 
+ * @author S545040 SaiKrishna Vuppala
  */
 public class ScavengerHunt extends AbstractGame {
 
@@ -96,6 +96,17 @@ public class ScavengerHunt extends AbstractGame {
         scavengerHunt.play();
         scavengerHunt.skill();
         scavengerHunt.scoring();
+        
+        try {
+         int a[] = new int[4];
+         System.out.println("Access element three :" + a[8]);
+      } 
+      catch (ArrayIndexOutOfBoundsException e) {
+         System.out.println("Exception thrown  :" + e);
+      }
+       finally{
+      System.out.println("Out of the block");
+    }
     }
 
     /**
