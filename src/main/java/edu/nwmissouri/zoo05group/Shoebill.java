@@ -55,6 +55,16 @@ public class Shoebill extends Animal {
         sb.speak();
         sb.eat();
         sb.move();
+        
+        try{
+            int p =1/0;
+            
+            System.out.println("this is shoebill division !");
+            }
+        
+            catch (Exception e){
+              System.out.println( "Exception thrown is: "+e);
+            }
     }
 
 }
