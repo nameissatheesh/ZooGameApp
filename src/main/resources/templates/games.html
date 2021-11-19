@@ -41,7 +41,7 @@
 
                     <main>
                         <th:block th:each="entry: ${gameMap}">
-                            <a th:href="@{/(id=${entry.key})}"> [[${entry.key}]]-[[${entry.value}]]</a> 
+                            <a th:href="@{/games/(id=${entry.key})}"> [[${entry.key}]]-[[${entry.value}]]</a> 
                         </th:block>
                     </main>
                     <hr>
