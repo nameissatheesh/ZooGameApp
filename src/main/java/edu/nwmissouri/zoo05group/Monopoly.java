@@ -6,7 +6,7 @@ package edu.nwmissouri.zoo05group;
 
 /**
  * This is Monopoly class extends AbstractGame class
- * @author S545030
+ * @author S545030 Gayatri Devabhaktuni
  */
 public class Monopoly extends AbstractGame {
 
@@ -100,6 +100,17 @@ public class Monopoly extends AbstractGame {
         monopoly.play();
         monopoly.skill();
         monopoly.scoring();
+        
+        try {
+         int a[] = new int[4];
+         System.out.println("Access element three :" + a[8]);
+      } 
+      catch (ArrayIndexOutOfBoundsException e) {
+         System.out.println("Exception thrown  :" + e);
+      }
+       finally{
+      System.out.println("Out of the block");
+    }
     }
 
     /**
