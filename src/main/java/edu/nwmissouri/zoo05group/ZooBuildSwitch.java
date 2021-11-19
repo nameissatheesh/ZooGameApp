@@ -58,7 +58,7 @@ public class ZooBuildSwitch {
         // find the files that should be excluded
         ArrayList<String> ignoreList = getNonCustomGameFiles();
 
-//        ArrayList<String> gameList = new ArrayList<String>(Arrays.asList("Badmintion", "Bingo", "Golf","Monoplay","ScavengerHunt","Sequence","Softball","Uno"));
+        // ArrayList<String> gameList = new ArrayList<String>(Arrays.asList("Badmintion", "Bingo", "Golf","Monoplay","ScavengerHunt","Sequence","Softball","Uno"));
         // process all found files, outputing custom animal code
         File fileFolder = new File(getCustomGamePackagePathString());
         String[] filesArray = fileFolder.list();
@@ -159,7 +159,6 @@ public class ZooBuildSwitch {
         System.out.println("===============================");
         System.out.println("Update NUMBER_ANIMAL_TYPES = " + --n);
         System.out.println("===============================");
-
     }
 
     /**
@@ -203,5 +202,4 @@ public class ZooBuildSwitch {
         System.out.println(projectPathString);
         return projectPathString;
     }
-
 }
