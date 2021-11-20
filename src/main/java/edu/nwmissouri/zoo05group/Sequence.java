@@ -87,6 +87,19 @@ public class Sequence extends AbstractGame {
         GREEN;
        
     }
+    
+    //added try catch exceptions
+
+    public void exceptiontest() {
+        try {
+            int a[] = new int[4];
+            System.out.println("Access element three :" + a[8]);
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Exception thrown :" + e);
+        } finally {
+            System.out.println("Out of the block");
+        }
+    }
 
     /**
      * Main method
@@ -101,6 +114,7 @@ public class Sequence extends AbstractGame {
         sequence.play();
         sequence.skill();
         sequence.scoring();
+        sequence.exceptiontest();
     }
 
     /**
