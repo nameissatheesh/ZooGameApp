@@ -6,10 +6,9 @@ package edu.nwmissouri.zoo05group;
 
 /**
  *
- * @author S545113
+ * @author shashanka ravi chaparala
  */
 public class Fencing extends AbstractGame {
-
 
     /**
      *
@@ -22,8 +21,8 @@ public class Fencing extends AbstractGame {
 
     /**
      *
-     * @param game_name
-     * call this play() method to see which game you are playing.
+     * @param game_name call this play() method to see which game you are
+     * playing.
      */
     @Override
     public void game(String game_name) {
@@ -74,29 +73,41 @@ public class Fencing extends AbstractGame {
         System.out.println("Fencing is a game of probability in which players mark off numbers on cards as the numbers are drawn randomly by a caller, the winner being the first person to mark off all their numbers.");
     }
 
-     void game() {
+    void game() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-     
+
     /**
      * Main method
      *
      * @param args
      */
     public static void main(String[] args) {
-        Fencing fencing = new Fencing("Fencing", 2);
-        fencing.game("Fencing");
-        fencing.players();
-        fencing.rules();
-        fencing.play();
-        fencing.skill();
-        fencing.scoring();
+//        try {
+//            Fencing fencing = new Fencing("Fencing", 2);
+//            fencing.game("Fencing");
+//            fencing.players();
+//            fencing.rules();
+//            fencing.play();
+//            fencing.skill();
+//            fencing.scoring();
+//        } catch (Exception ex) {
+//            System.out.println("Exception: " + ex.getMessage());
+//        }
 
+        try {
+            int a[] = new int[4];
+            System.out.println("Access element three :" + a[8]);
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Exception thrown  :" + e);
+        } finally {
+            System.out.println("Out of the block");
+        }
     }
 
     /**
-     * An instance of an Fencing is now Runnable - call this run() method to
-     * see all the Fencing tricks.
+     * An instance of an Fencing is now Runnable - call this run() method to see
+     * all the Fencing tricks.
      */
     @Override
     public void run() {

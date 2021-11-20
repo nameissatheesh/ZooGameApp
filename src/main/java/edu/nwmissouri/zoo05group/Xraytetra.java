@@ -7,7 +7,7 @@ package edu.nwmissouri.zoo05group;
 
 /**
  *
- * @author S545113
+ * @author shashanka ravi chaparala
  */
 public class Xraytetra extends Animal {
 
@@ -93,14 +93,22 @@ public class Xraytetra extends Animal {
      * @param args
      */
     public static void main(String[] args) {
-        Xraytetra xraytetra = new Xraytetra("Shashankaravi");
-        xraytetra.speak();
-        xraytetra.move();
-        xraytetra.location();
-        xraytetra.character();
-        xraytetra.profess();
-        for (Days days : Days.values()) {
-            System.out.println(days);
+//        Xraytetra xraytetra = new Xraytetra("Shashankaravi");
+//        xraytetra.speak();
+//        xraytetra.move();
+//        xraytetra.location();
+//        xraytetra.character();
+//        xraytetra.profess();
+//        for (Days days : Days.values()) {
+//            System.out.println(days);
+//        }
+
+        try {
+            int p = 1 / 0;
+
+            System.out.println("this is shoebill division !");
+        } catch (Exception e) {
+            System.out.println("Exception thrown is: " + e);
         }
     }
 }
