@@ -92,6 +92,18 @@ public class Badminton extends AbstractGame implements Runnable {
         DROPS;
     }
 
+     /**
+     *
+     * call this DivideByZero() - method to see Exception handing.
+     */
+    public void DivideByZero() {
+        try {
+            int data = 100/0;
+        } catch (ArithmeticException e) {
+            System.out.println(e);
+        }
+    }
+
     /**
      * Main method
      *
@@ -105,6 +117,16 @@ public class Badminton extends AbstractGame implements Runnable {
         badminton.play();
         badminton.skill();
         badminton.scoring();
+        for (Badminton.stockes stockes : Badminton.stockes.values()) {
+            System.out.println(stockes);
+        }
+        badminton.DivideByZero();
+        
+        int myInt = 9;
+        double myDouble = myInt; // Automatic casting from Int to Double
+        
+        System.out.println(myInt); // output 9 
+        System.out.println(myDouble); // output to 9.0
     }
 
     /**
@@ -119,5 +141,6 @@ public class Badminton extends AbstractGame implements Runnable {
         this.play();
         this.skill();
         this.scoring();
+        this.DivideByZero();
     }
 }

@@ -4,13 +4,14 @@
  */
 package edu.nwmissouri.zoo05group;
 
+import java.lang.Integer;
 /**
- * 
+ *
  * Bingo class (derived subclass of the superclass AbstractGame)
+ *
  * @author S545243 Satheesh Eppalapelli
  */
 public class Bingo extends AbstractGame implements Runnable {
-
 
     /**
      *
@@ -23,8 +24,8 @@ public class Bingo extends AbstractGame implements Runnable {
 
     /**
      *
-     * @param game_name
-     * call this play() method to see which game you are playing.
+     * @param game_name call this play() method to see which game you are
+     * playing.
      */
     @Override
     public void game(String game_name) {
@@ -75,10 +76,23 @@ public class Bingo extends AbstractGame implements Runnable {
         System.out.println("Bingo is a game of probability in which players mark off numbers on cards as the numbers are drawn randomly by a caller, the winner being the first person to mark off all their numbers.");
     }
 
-     void game() {
+    void game() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-     
+
+    /**
+     *
+     * call this NumberFormatException() - method to see Exception handing.
+     */
+    public void NumberFormatException() {
+        try {
+            String s = "abc";
+            int i = Integer.parseInt(s);//NumberFormatException
+        } catch (ArithmeticException e) {
+            System.out.println(e);
+        }
+    }
+
     /**
      * Main method
      *
@@ -92,12 +106,12 @@ public class Bingo extends AbstractGame implements Runnable {
         bingo.play();
         bingo.skill();
         bingo.scoring();
-
+        bingo.NumberFormatException();
     }
 
     /**
-     * An instance of an Bingo is now Runnable - call this run() method to
-     * see all the Bingo tricks.
+     * An instance of an Bingo is now Runnable - call this run() method to see
+     * all the Bingo tricks.
      */
     @Override
     public void run() {
@@ -107,5 +121,6 @@ public class Bingo extends AbstractGame implements Runnable {
         this.play();
         this.skill();
         this.scoring();
+        this.NumberFormatException();
     }
 }
