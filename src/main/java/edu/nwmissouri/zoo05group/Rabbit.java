@@ -46,16 +46,59 @@ public class Rabbit extends Animal {
     }
 
    
-    public void cal() {
+    //catching exceptions
+    public void caladd() {
+        try{
         double m = 4.0;
         int n = 2;
         double o = getRabbitAddition(m, n);
         System.out.printf("I know RabbitAddition! %4.2f plus %d is %4.2f \n", m, n, o);
+        }catch (ArithmeticException  e){
+            System.out.println("Exception thrown   :" + e);
+        }
+        finally{
+        System.out.println("error defined in addition");
+        }
     }
 
+    public void calsub() {
+        try{
+        double m = 6.0;
+        int n = 2;
+        double o = getRabbitSubstraction(m, n);
+        System.out.printf("I know RabbitSubstraction! %4.2f plus %d is %4.2f \n", m, n, o);
+        }catch (ArithmeticException  e){
+            System.out.println("Exception thrown   :" + e);
+        }
+        finally{
+        System.out.println("error defined in substraction");
+        }
+    }
+      public void caldivision() {
+        try{
+        int m = 6;
+        int n = 0;
+        int o = getRabbitdivision(m, n);
+        System.out.printf("I know Rabbitdivision!");
+        }catch (ArithmeticException  e){
+            System.out.println("Exception thrown   :" + e);
+        }
+        finally{
+        System.out.println("error defined in division");
+        }
+    }
+    
     public double getRabbitAddition(double m, int n) {
 
         return m + n;
+    }
+    public double getRabbitSubstraction(double m, int n) {
+
+        return m - n;
+    }
+    public int getRabbitdivision(int m, int n) {
+
+        return m/n;
     }
 
     /**
@@ -77,7 +120,10 @@ public class Rabbit extends Animal {
         par.favfood();
         par.skintype();
         par.color();
-        par.cal();
+        //par.cal();
+        par.caladd();
+        par.calsub();
+        par.caldivision();
          for (FoodHabits foodhabit : FoodHabits.values()) {
             System.out.println(foodhabit);
         }
